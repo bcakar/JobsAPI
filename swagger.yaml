@@ -4,7 +4,8 @@ info:
     description: API for managing jobs and user authentication
     version: 1.0.0
 
-servers: [url: https://jobsapi-0k8q.onrender.com/api/v1]
+servers:
+    - url: https://jobsapi-0k8q.onrender.com/api/v1
 
 paths:
     /auth/register:

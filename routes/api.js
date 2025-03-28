@@ -6,6 +6,6 @@ const path = require('path');
 const swaggerFilePath = path.join(__dirname, '../swagger.yaml');
 
 const swaggerDocument = YAML.load(swaggerFilePath);
-router.get('/', swaggerUI.serve, swaggerUI.setup(swaggerDocument));
+router.use('/', swaggerUI.serve, swaggerUI.setup(swaggerDocument));
 
 module.exports = router;
